@@ -21,14 +21,14 @@ const chapters = [
     number: "02",
     slug: "alternatives",
     title: "Better Alternatives",
-    premise: "Rethink what people already know and love.",
+    premise: "Take something people already know, love or understand—and rethink the experience.",
     statement: "Can we make it better without taking away what people love?",
-    body: "Better ingredients. Thoughtful nutrition. Less of what isn’t needed. More of what genuinely improves the experience. Across familiar rituals, the first requirement remains the same: it should simply be delicious.",
+    body: "Not a diet version. Not a substitute. Not an artificial ‘healthy’ replacement. Keep what makes the experience great. Rethink what could make it genuinely better.",
     image: "/vision/better-alternatives.jpg",
-    alt: "Real strawberry, cultured cream and a delicate crisp texture",
-    example: "The experience comes first. Better is the bonus.",
-    close: "Don’t replace the experience.",
-    note: "Improve it.",
+    alt: "A chilled spoonful of creamy chia with real strawberry",
+    example: "",
+    close: "Keep what people love.",
+    note: "Rethink what can be better.",
   },
   {
     number: "03",
@@ -87,8 +87,32 @@ export default function VisionPage() {
           <figure>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={chapter.image} alt={chapter.alt} loading={chapter.number === "01" ? "eager" : "lazy"} />
-            <figcaption>{chapter.example}</figcaption>
+            {chapter.example ? <figcaption>{chapter.example}</figcaption> : null}
           </figure>
+
+          {chapter.slug === "alternatives" ? (
+            <section className="vision-chapter-example" aria-labelledby="chia-overnights-title">
+              <p className="vision-architecture-kicker">Familiar occasion.<br />Different approach.</p>
+              <div>
+                <h3 id="chia-overnights-title">Chia<br />Overnights</h3>
+                <p>A familiar ritual, reimagined around a different ingredient.</p>
+                <div className="vision-chapter-example-attributes" aria-label="Chia Overnights concept attributes">
+                  <span>Simple.</span>
+                  <span>Convenient.</span>
+                  <span>Naturally nutritious.</span>
+                  <span>Made for real life.</span>
+                </div>
+              </div>
+              <div className="vision-chapter-example-context">
+                <p>People already understand overnight oats. What if we rethink the experience around chia?</p>
+                <p>A refrigerated, ready-to-eat breakfast or snack built around chia’s natural qualities, great ingredients, real flavors and convenience.</p>
+              </div>
+              <aside>
+                <span>Why it belongs here</span>
+                <p>Chia can be naturally nutritious without turning this into a “functional food.” This is Better Alternatives because HOLISTIK transforms an ingredient into a ready-to-eat solution for a familiar occasion.</p>
+              </aside>
+            </section>
+          ) : null}
 
           <div className="vision-chapter-thesis">
             <h3>{chapter.statement}</h3>

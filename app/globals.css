@@ -426,6 +426,56 @@
 .vision-chapter figure { margin: 0; }
 .vision-chapter figure img { width: 100%; height: min(72vw, 850px); object-fit: cover; }
 .vision-chapter figure figcaption { padding-top: 14px; color: rgba(23,38,0,.58); }
+.vision-chapter-example {
+  padding: clamp(90px, 10vw, 160px) 0 0;
+  display: grid;
+  grid-template-columns: minmax(170px, .38fr) 1fr;
+  column-gap: 7vw;
+  row-gap: clamp(65px, 8vw, 120px);
+}
+.vision-chapter-example > .vision-architecture-kicker { margin: 10px 0 0; }
+.vision-chapter-example > div > h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: clamp(76px, 10.2vw, 165px);
+  line-height: .78;
+  letter-spacing: -.075em;
+  font-weight: 900;
+}
+.vision-chapter-example > div > p {
+  max-width: 620px;
+  margin: 38px 0 0;
+  font-size: clamp(23px, 2.3vw, 36px);
+  line-height: 1.15;
+  font-weight: 700;
+}
+.vision-chapter-example-attributes {
+  margin-top: 52px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(23,38,0,.5);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  font-size: 15px;
+}
+.vision-chapter-example-context {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6vw;
+}
+.vision-chapter-example-context p { margin: 0; font-size: 18px; line-height: 1.55; }
+.vision-chapter-example-context p:first-child { font-size: clamp(28px, 3.1vw, 48px); line-height: 1.08; font-weight: 800; letter-spacing: -.035em; }
+.vision-chapter-example aside {
+  grid-column: 2;
+  padding: 28px 0 0;
+  border-top: 1px solid rgba(23,38,0,.5);
+  display: grid;
+  grid-template-columns: .6fr 1.4fr;
+  gap: 5vw;
+}
+.vision-chapter-example aside span { text-transform: uppercase; font-size: 12px; letter-spacing: .12em; font-weight: 800; }
+.vision-chapter-example aside p { max-width: 750px; margin: 0; font-size: 16px; line-height: 1.6; }
 .vision-chapter-thesis {
   padding: clamp(95px, 10vw, 160px) 0;
   display: grid;
@@ -452,7 +502,7 @@
   font-weight: 900;
 }
 .vision-chapter-close span { display: block; margin-top: 30px; }
-.vision-chapter-alternatives { background: #bc6cb7; color: var(--va-green); }
+.vision-chapter-alternatives { background: #e4bfde; color: var(--va-green); }
 .vision-chapter-alternatives figure figcaption,
 .vision-chapter-alternatives .vision-chapter-thesis > p { color: rgba(23,38,0,.68); }
 .vision-chapter-functional { background: var(--va-green); color: var(--va-cream); }
@@ -510,6 +560,16 @@
   .vision-chapter-alternatives .vision-chapter-heading h2 { font-size: clamp(38px, 10.2vw, 50px); }
   .vision-chapter figure { width: 100%; overflow: hidden; }
   .vision-chapter figure img { width: 100%; height: 62svh; }
+  .vision-chapter-example { grid-template-columns: 1fr; gap: 64px; padding-top: 80px; }
+  .vision-chapter-example > .vision-architecture-kicker,
+  .vision-chapter-example > div,
+  .vision-chapter-example-context,
+  .vision-chapter-example aside { grid-column: 1; min-width: 0; }
+  .vision-chapter-example > div > h3 { font-size: clamp(56px, 17vw, 82px); overflow-wrap: normal; }
+  .vision-chapter-example > div > p { margin-top: 28px; }
+  .vision-chapter-example-attributes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
+  .vision-chapter-example-context { grid-template-columns: 1fr; gap: 34px; }
+  .vision-chapter-example aside { grid-template-columns: 1fr; gap: 22px; }
   .vision-chapter-thesis { grid-template-columns: 1fr; gap: 50px; }
   .vision-chapter-thesis h3 { font-size: clamp(46px, 13vw, 68px); }
   .vision-chapter-close p { font-size: clamp(49px, 14vw, 72px); }
