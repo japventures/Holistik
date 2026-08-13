@@ -15,7 +15,6 @@ export default function Home() {
     <main className="vision-site">
       <header className="vision-header">
         <a href="#top" aria-label="HOLISTIK home"><Wordmark /></a>
-        <a className="vision-entry" href="/vision">Vision <span aria-hidden="true">→</span></a>
       </header>
 
       <section className="vision-hero" id="top">
