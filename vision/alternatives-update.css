@@ -13,7 +13,7 @@
 @media(max-width:760px){
   .chapter-example{grid-template-columns:1fr;gap:64px;padding-top:80px}
   .chapter-example>.kicker,.chapter-example>div,.chapter-example-context,.chapter-example aside{grid-column:1;min-width:0}
-  .chapter-example>div>h3{font-size:clamp(56px,17vw,82px);overflow-wrap:normal}
+  .chapter-example>div>h3{font-size:clamp(44px,14.6vw,72px);overflow-wrap:normal}
   .chapter-example>div>p{margin-top:28px}
   .chapter-example-attributes{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
   .chapter-example-context{grid-template-columns:1fr;gap:34px}
