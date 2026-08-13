@@ -25,7 +25,7 @@ const chapters = [
     statement: "Can we make it better without taking away what people love?",
     body: "Better ingredients. Thoughtful nutrition. Less of what isn’t needed. More of what genuinely improves the experience. Across familiar rituals, the first requirement remains the same: it should simply be delicious.",
     image: "/vision/better-alternatives.jpg",
-    alt: "Familiar baked textures transformed with fruit and cultured cream",
+    alt: "Real strawberry, cultured cream and a delicate crisp texture",
     example: "The experience comes first. Better is the bonus.",
     close: "Don’t replace the experience.",
     note: "Improve it.",
@@ -79,7 +79,7 @@ export default function VisionPage() {
             <span>{chapter.number}</span>
             <div>
               <p className="vision-architecture-kicker">One way to make food better</p>
-              <h2>{chapter.title}</h2>
+              <h2>{chapter.title.split(" ").map((word) => <span key={word}>{word}</span>)}</h2>
             </div>
             <p>{chapter.premise}</p>
           </header>
