@@ -509,6 +509,34 @@
 .vision-chapter-functional figure figcaption,
 .vision-chapter-functional .vision-chapter-thesis > p { color: rgba(245,236,226,.62); }
 .vision-chapter-functional .vision-chapter-close { border-color: var(--va-cream); }
+.vision-functional-story { padding-top: clamp(95px, 10vw, 160px); }
+.vision-functional-story-lead { display: grid; grid-template-columns: minmax(170px, .38fr) 1fr; gap: 7vw; }
+.vision-functional-story-lead > .vision-architecture-kicker { margin: 12px 0 0; }
+.vision-functional-story-lead h3 { margin: 0; text-transform: uppercase; font-size: clamp(78px, 11.3vw, 180px); line-height: .76; letter-spacing: -.08em; font-weight: 900; }
+.vision-functional-story-lead > div > p { margin: 40px 0 0; font-size: clamp(25px, 2.6vw, 42px); line-height: 1.1; font-weight: 700; }
+.vision-functional-story-copy { margin: clamp(80px, 9vw, 140px) 0 0 calc(38% + 7vw); display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; }
+.vision-functional-story-copy p { margin: 0; font-size: 18px; line-height: 1.6; color: rgba(245,236,226,.68); }
+.vision-functional-story-copy p:first-child { font-size: clamp(28px, 3vw, 48px); line-height: 1.08; letter-spacing: -.04em; font-weight: 800; color: var(--va-cream); }
+.vision-functional-ritual { margin: clamp(105px, 12vw, 190px) 0 0; text-transform: uppercase; font-size: clamp(61px, 9.5vw, 152px); line-height: .82; letter-spacing: -.07em; font-weight: 900; }
+.vision-functional-payoff { max-width: 850px; margin: 42px 0 0 auto; font-size: clamp(27px, 3.5vw, 55px); line-height: 1.08; font-weight: 700; }
+.vision-functional-principle { margin-top: clamp(120px, 14vw, 220px); display: grid; grid-template-columns: minmax(170px, .38fr) 1fr; gap: 7vw; }
+.vision-functional-principle > .vision-architecture-kicker { margin: 12px 0 0; }
+.vision-functional-principle dl { margin: 0; }
+.vision-functional-principle dl > div { padding: 28px 0; border-top: 1px solid rgba(245,236,226,.5); display: grid; grid-template-columns: .55fr 1.45fr; gap: 5vw; }
+.vision-functional-principle dt { text-transform: uppercase; font-size: clamp(28px, 3vw, 48px); line-height: .9; font-weight: 900; letter-spacing: -.045em; }
+.vision-functional-principle dd { margin: 0; max-width: 650px; font-size: 17px; line-height: 1.55; color: rgba(245,236,226,.68); }
+.vision-functional-directions { margin-top: clamp(120px, 14vw, 220px); display: grid; grid-template-columns: .38fr 1fr 1fr; gap: 4vw; }
+.vision-functional-directions > .vision-architecture-kicker { margin: 8px 0 0; }
+.vision-functional-directions > p { grid-column: 2 / -1; margin: 0 0 55px; max-width: 900px; font-size: clamp(30px, 4vw, 64px); line-height: 1; font-weight: 800; letter-spacing: -.045em; }
+.vision-functional-directions > div { padding-top: 24px; border-top: 1px solid rgba(245,236,226,.5); }
+.vision-functional-directions > div:nth-of-type(1) { grid-column: 2; }
+.vision-functional-directions span { display: block; text-transform: uppercase; font: 700 11px/1.4 var(--font-geist-mono), monospace; letter-spacing: .12em; }
+.vision-functional-directions strong { display: block; margin-top: 60px; font-size: clamp(28px, 3vw, 48px); line-height: 1; }
+.vision-functional-directions > div p { margin: 18px 0 0; max-width: 480px; line-height: 1.55; color: rgba(245,236,226,.68); }
+.vision-functional-directions small { grid-column: 2 / -1; margin-top: 24px; color: rgba(245,236,226,.5); }
+.vision-functional-position { margin-top: clamp(125px, 15vw, 240px); padding-top: 34px; border-top: 1px solid var(--va-cream); display: grid; grid-template-columns: 1.3fr .7fr; gap: 8vw; align-items: end; }
+.vision-functional-position p { margin: 0; text-transform: uppercase; font-size: clamp(48px, 6.8vw, 108px); line-height: .86; letter-spacing: -.06em; font-weight: 900; }
+.vision-functional-position span { font-size: 18px; line-height: 1.55; color: rgba(245,236,226,.68); }
 
 .vision-architecture-question {
   min-height: 115svh;
@@ -570,6 +598,23 @@
   .vision-chapter-example-attributes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
   .vision-chapter-example-context { grid-template-columns: 1fr; gap: 34px; }
   .vision-chapter-example aside { grid-template-columns: 1fr; gap: 22px; }
+  .vision-functional-story-lead,
+  .vision-functional-principle { grid-template-columns: 1fr; gap: 55px; }
+  .vision-functional-story-lead h3 { font-size: clamp(58px, 20vw, 88px); }
+  .vision-functional-story-copy { margin-left: 0; grid-template-columns: 1fr; gap: 35px; }
+  .vision-functional-ritual { font-size: clamp(47px, 14.5vw, 70px); }
+  .vision-functional-payoff { margin-top: 28px; }
+  .vision-functional-principle dl > div { grid-template-columns: 1fr; gap: 18px; }
+  .vision-functional-directions { grid-template-columns: 1fr; gap: 55px; }
+  .vision-functional-directions > .vision-architecture-kicker,
+  .vision-functional-directions > p,
+  .vision-functional-directions > div,
+  .vision-functional-directions > div:nth-of-type(1),
+  .vision-functional-directions small { grid-column: 1; }
+  .vision-functional-directions > p { margin-bottom: 15px; }
+  .vision-functional-directions strong { margin-top: 34px; }
+  .vision-functional-position { grid-template-columns: 1fr; gap: 45px; }
+  .vision-functional-position p { font-size: clamp(41px, 12.3vw, 60px); }
   .vision-chapter-thesis { grid-template-columns: 1fr; gap: 50px; }
   .vision-chapter-thesis h3 { font-size: clamp(46px, 13vw, 68px); }
   .vision-chapter-close p { font-size: clamp(49px, 14vw, 72px); }

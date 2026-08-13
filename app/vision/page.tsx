@@ -34,14 +34,14 @@ const chapters = [
     number: "03",
     slug: "functional",
     title: "Better Functional",
-    premise: "Use nutrition, science and formulation when they can solve a real need.",
-    statement: "When food can do more, function should have a purpose.",
-    body: "Not functionality for the label. Not ingredients for the claim. Real food, useful science and thoughtful processes—applied only when they make everyday life meaningfully better.",
+    premise: "Real food. More function.",
+    statement: "How can we make it easier to consume—and more useful for the way people live today?",
+    body: "Through freeze-dried blends, powders, concentrates and other convenient applications, HOLISTIK can preserve the familiarity of real food while adding functionality where it genuinely improves the product. The goal isn’t to put everything into one product. It’s to give every product a purpose.",
     image: "/vision/better-functional.jpg",
-    alt: "Real leafy greens transformed through freeze-drying",
-    example: "One expression · Freeze-dried greens that make preparing a real green juice dramatically easier.",
-    close: "Function with purpose.",
-    note: "Nutrition designed around a real everyday need.",
+    alt: "Recognizable greens, vegetables, fruit and seeds beside a freshly mixed green drink",
+    example: "",
+    close: "Daily Greens is an opportunity.",
+    note: "Better Functional is the platform.",
   },
 ];
 
@@ -111,6 +111,48 @@ export default function VisionPage() {
                 <span>Why it belongs here</span>
                 <p>Chia can be naturally nutritious without turning this into a “functional food.” This is Better Alternatives because HOLISTIK transforms an ingredient into a ready-to-eat solution for a familiar occasion.</p>
               </aside>
+            </section>
+          ) : null}
+
+          {chapter.slug === "functional" ? (
+            <section className="vision-functional-story" aria-labelledby="daily-greens-title">
+              <div className="vision-functional-story-lead">
+                <p className="vision-architecture-kicker">From food to function</p>
+                <div>
+                  <h3 id="daily-greens-title">Daily<br />Greens</h3>
+                  <p>A better way to get your greens.</p>
+                </div>
+              </div>
+
+              <div className="vision-functional-story-copy">
+                <p>A real-food green blend inspired by the ingredients of a freshly prepared green juice—transformed into a convenient format for everyday life.</p>
+                <p>Leafy greens, vegetables and fruits can provide the nutritional foundation. Ingredients such as fiber or prebiotics could add a deliberate functional layer—when they have a clear reason to be there.</p>
+              </div>
+
+              <p className="vision-functional-ritual">Mix. Drink. Keep moving.</p>
+              <p className="vision-functional-payoff">The goodness of greens, without the grocery run, juicer or cleanup.</p>
+
+              <div className="vision-functional-principle">
+                <p className="vision-architecture-kicker">The principle</p>
+                <dl>
+                  <div><dt>Real food</dt><dd>Recognizable fruits, vegetables, seeds, roots and whole-food ingredients.</dd></div>
+                  <div><dt>Better format</dt><dd>Making nutritious foods dramatically easier to store, prepare and consume.</dd></div>
+                  <div><dt>Added function</dt><dd>Thoughtfully incorporating functional ingredients when they create a meaningful reason for the product to exist.</dd></div>
+                </dl>
+              </div>
+
+              <div className="vision-functional-directions">
+                <p className="vision-architecture-kicker">Where it could go</p>
+                <p>Better Functional is bigger than greens. The same philosophy can extend across different ingredients, functions and occasions.</p>
+                <div><span>Roots</span><strong>Vegetables with purpose.</strong><p>Beet, carrot, tomato and other vibrant plant ingredients reimagined in a convenient daily format.</p></div>
+                <div><span>Berries</span><strong>Fruit that does more.</strong><p>A berry-forward real-food base with a purposeful, complementary functional layer.</p></div>
+                <small>Explorations of the platform—not a finalized product pipeline.</small>
+              </div>
+
+              <div className="vision-functional-position">
+                <p>Food you recognize.<br />Function you understand.<br />Convenience you’ll actually use.</p>
+                <span>Not supplements disguised as food.<br />Better food, designed with purpose.</span>
+              </div>
             </section>
           ) : null}
 
