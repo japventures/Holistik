@@ -91,12 +91,12 @@ export default function VisionPage() {
           </figure>
 
           {chapter.slug === "alternatives" ? (
-            <section className="vision-chapter-example" aria-labelledby="chia-overnights-title">
+            <section className="vision-chapter-example" aria-labelledby="chia-pudding-title">
               <p className="vision-architecture-kicker">Familiar occasion.<br />Different approach.</p>
               <div>
-                <h3 id="chia-overnights-title">Chia<br />Overnights</h3>
+                <h3 id="chia-pudding-title">Chia<br />Pudding</h3>
                 <p>A familiar ritual, reimagined around a different ingredient.</p>
-                <div className="vision-chapter-example-attributes" aria-label="Chia Overnights concept attributes">
+                <div className="vision-chapter-example-attributes" aria-label="Chia Pudding concept attributes">
                   <span>Simple.</span>
                   <span>Convenient.</span>
                   <span>Naturally nutritious.</span>
